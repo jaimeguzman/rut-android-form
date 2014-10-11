@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    
+    
+    
+       <!-- Form Input: Name --> 
+
+    <EditText
+        android:id="@+id/formNombres"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Tu nombre"
+        android:inputType="text|textCapSentences"
+        android:textSize="11sp" />
+    
+    <EditText
+        android:id="@+id/formApellidoPaterno"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/formNombres"
+        android:layout_alignTop="@id/formNombres"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="Tu Apellido"
+        android:inputType="text|textCapSentences"
+        android:textSize="11sp" />
+    
+	<!-- Form Input: RUT -->
+	
+	<EditText
+	    android:id="@+id/formRut"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_alignLeft="@id/formNombres"
+	    android:layout_alignTop="@id/formNombres"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="138dp"
+	    android:ems="10"
+	    android:hint="XX.XXX.XXX-X"
+	    android:textSize="11sp" />
+
+	<Button
+	    android:id="@+id/enviar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/formRut"
+	    android:layout_below="@+id/formRut"
+	    android:layout_marginLeft="87dp"
+	    android:layout_marginTop="95dp"
+	    android:text="Enviar" />
+
+</RelativeLayout>
